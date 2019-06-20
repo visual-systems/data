@@ -1,0 +1,8 @@
+
+
+-- Definition of a simple graph type as discussed at LambdaJam 2019
+
+{ nodes : List ./node.dhall.type
+, edges : List ./edge.dhall.type
+, type  : ./function.dhall.type ./input.dhall.type ./output.dhall.type
+}

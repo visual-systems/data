@@ -1,0 +1,24 @@
+
+-- Definition of a simple graph example as discussed at LambdaJam 2019
+
+-- Node Definitions
+let I  = { name = "I" }
+let A  = { name = "A" }
+let B  = { name = "B" }
+let P  = { name = "+" }
+
+-- Edge Definitions
+let IA = { from = "I", to = "A" }
+let IB = { from = "I", to = "B" }
+let AP = { from = "A", to = "+" }
+let BP = { from = "B", to = "+" }
+
+-- Graph Definition
+in
+{ name   = "f"
+, nodes  = [ I, A, B, P ]
+, edges  = [ IA, IB, AP, BP ]
+, type   = { input = 1, output = 2 }
+, input  = "I"
+, output = "+"
+}

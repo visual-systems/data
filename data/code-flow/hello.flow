@@ -1,0 +1,31 @@
+# https://codeflow.co/docs/language-guide/flow/
+{
+    ...    
+    //activities contains list of modules placed in the flow
+    activities: { 
+        "start": {
+            "name": "Start",
+            "ref": "core/start"
+            ...
+        },
+        "step1": {
+            "name": "Step 1",
+            "ref": "module-path" //Unique reference to the module
+            ...
+        }   
+        "end": {
+            ...     
+        }
+    },    
+    //transitions array holds the details of the transitions between the steps
+    transitions: [ 
+        {
+            from: "start", 
+            to: "step1"
+        },
+        {
+            from: "step1", 
+            to: "end"
+        }
+    ]
+}

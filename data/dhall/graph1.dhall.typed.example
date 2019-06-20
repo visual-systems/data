@@ -1,0 +1,5 @@
+
+
+-- Typechecking the example graph
+
+./graph1.dhall.example : ./graph1.dhall.type
